@@ -1,0 +1,840 @@
+Build started 17/12/2025 12:05:13.
+Logging verbosity is set to: Detailed.     0>Terminal Logger was not used because the output is being redirected to a file.
+       Process = "/usr/local/share/dotnet/dotnet"
+       MSBuild executable path = "/usr/local/share/dotnet/sdk/9.0.100/MSBuild.dll"
+       Command line arguments = "/usr/local/share/dotnet/sdk/9.0.100/MSBuild.dll -maxcpucount -verbosity:m -tlp:default=auto -nologo -consoleloggerparameters:Summary -property:Configuration=Release -restore:false FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj /flp:logfile=infra-build.log -distributedlogger:Microsoft.DotNet.Tools.MSBuild.MSBuildLogger,/usr/local/share/dotnet/sdk/9.0.100/dotnet.dll*Microsoft.DotNet.Tools.MSBuild.MSBuildForwardingLogger,/usr/local/share/dotnet/sdk/9.0.100/dotnet.dll"
+       Current directory = "/Users/ololadeoyebanji/RiderProjects/FasterXchange"
+       MSBuild version = "17.12.7+5b8665660"
+       The SDK "Microsoft.NET.Sdk" was successfully resolved by the "DefaultSdkResolver" resolver to location "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/Sdk" and version "".
+       /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.props(49,11): message : Property 'MSBuildExtensionsPath' with value '/usr/local/share/dotnet/sdk/9.0.100/' expanded from the environment.
+       Property reassignment: $(MSBuildProjectExtensionsPath)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/" (previous value: "obj\") at /usr/local/share/dotnet/sdk/9.0.100/Current/Microsoft.Common.props (60,5)
+       Assembly loaded during Evaluation: System.Threading.Tasks.Parallel, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /usr/local/share/dotnet/shared/Microsoft.NETCore.App/9.0.0/System.Threading.Tasks.Parallel.dll, MVID: 10755dc1-ad40-4313-ae17-dd354f50d739, AssemblyLoadContext: Default)
+       /usr/local/share/dotnet/sdk/9.0.100/Current/Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value '/Users/ololadeoyebanji/Library/Application Support/Microsoft\MSBuild' expanded from the environment.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (90,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (91,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (92,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" because directory "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.SDK.WorkloadAutoImportPropsLocator/Sdk" did not exist.
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver, Version=9.0.100.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll, MVID: cfd5be76-3265-4c7d-868a-eb0e5f1b8352, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.Build.NuGetSdkResolver, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Build.NuGetSdkResolver.dll, MVID: ad7c9abe-92b6-4c72-8576-74fa5d1a76d8, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Build.NuGetSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.DotNet.Cli.Utils, Version=9.0.100.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.DotNet.Cli.Utils.dll, MVID: ef5e610c-aab4-42c2-a175-264c213c1d57, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.NET.Sdk.WorkloadManifestReader, Version=9.0.100.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadManifestReader.dll, MVID: 70729165-e625-43da-9354-a1e0c3aae7fb, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       Assembly loaded during Evaluation: Microsoft.Deployment.DotNet.Releases, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Deployment.DotNet.Releases.dll, MVID: a97973a0-2061-4c2c-9f90-e2f0f875afbd, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/Microsoft.NET.Sdk.WorkloadMSBuildSdkResolver.dll)
+       The SDK "Microsoft.NET.SDK.WorkloadAutoImportPropsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "/usr/local/share/dotnet/packs/Microsoft.Android.Sdk.Darwin/35.0.61/Sdk" and version "null".
+       Property reassignment: $(TargetsForTfmSpecificContentInPackage)=";PackTool;_PackProjectToolValidation" (previous value: ";PackTool") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackProjectTool.props (15,5)
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       Assembly loaded during Evaluation: NuGet.Frameworks, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/NuGet.Frameworks.dll, MVID: 0fc399c3-038a-4956-89d3-7959270b301a, AssemblyLoadContext: Assembly.LoadFile(/usr/local/share/dotnet/sdk/9.0.100/NuGet.Frameworks.dll))
+       Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets (69,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**" (previous value: ";bin\Release//**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (122,5)
+       Property reassignment: $(OutputPath)="bin\Release/net8.0/" (previous value: "bin\Release/") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (137,5)
+       Property reassignment: $(IntermediateOutputPath)="obj\Release/net8.0/" (previous value: "obj\Release/") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       The "DefaultSdkResolver" resolver attempted to resolve the SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator".
+       Warnings: null
+       Errors: MSB4276: The default SDK resolver failed to resolve SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" because directory "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.SDK.WorkloadManifestTargetsLocator/Sdk" did not exist.
+       The SDK "Microsoft.NET.SDK.WorkloadManifestTargetsLocator" was successfully resolved by the "Microsoft.DotNet.MSBuildWorkloadSdkResolver" resolver to location "/usr/local/share/dotnet/sdk-manifests/9.0.100/microsoft.net.sdk.android/35.0.61" and version "null".
+       Property reassignment: $(_FrameworkIdentifierForImplicitDefine)="NET" (previous value: "NETCOREAPP") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (187,5)
+       Property reassignment: $(_FrameworkVersionForImplicitDefine)="8_0" (previous value: "8.0") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (192,5)
+       Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:12.0 -define:TRACE" (previous value: "-langversion:12.0") at /usr/local/share/dotnet/sdk/9.0.100/Roslyn/Microsoft.CSharp.Core.targets (205,5)
+       Assembly loaded during Evaluation: Microsoft.Build.Utilities.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Build.Utilities.Core.dll, MVID: c72f3d9d-0078-4bc8-bccd-74baa5c2b931, AssemblyLoadContext: Default)
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (179,5)
+       Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (185,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="FasterXc.B0AE4A01" (previous value: "FasterXchange.Infrastructure.csproj") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (392,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="FasterXc.B0AE4A01.Up2Date" (previous value: "FasterXc.B0AE4A01") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (393,5)
+       Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (541,5)
+       Property reassignment: $(DelaySign)="" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (580,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets(2579,5): message : Property 'LocalAppData' with value '/Users/ololadeoyebanji/Library/Application Support' expanded from the environment.
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (3897,5)
+       Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+             AssignProjectConfiguration;
+             _SplitProjectReferencesByFileExistence
+           " (previous value: "_SplitProjectReferencesByFileExistence") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (5100,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets(6846,5): message : Property 'MSBuildExtensionsPath32' with value '/usr/local/share/dotnet/sdk/9.0.100' expanded from the environment.
+       Property reassignment: $(ProjectAssetsCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.assets.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.assets.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (29,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           " (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (80,5)
+       Property reassignment: $(PrepareResourcesDependsOn)="
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+             
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+           " (previous value: "
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (86,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**" (previous value: ";bin\Release//**;obj\Release//**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (27,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**" (previous value: ";bin\Release//**;obj\Release//**;bin\/**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (29,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (32,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (33,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (34,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (36,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ;
+             ResolveTargetingPackAssets;
+           " (previous value: "
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.genruntimeconfig.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.genruntimeconfig.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (44,5)
+       Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.genpublishdeps.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.genpublishdeps.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (46,5)
+       Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.genbundle.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.genbundle.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (48,5)
+       Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (81,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets(96,5): message : Property 'HOME' with value '/Users/ololadeoyebanji' expanded from the environment.
+       Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="/Users/ololadeoyebanji/.dotnet/store" (previous value: "/Users/ololadeoyebanji") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (98,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (140,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (144,5)
+       Property reassignment: $(CoreBuildDependsOn)="
+             _CheckForBuildWithNoBuild;
+             
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ;
+             GenerateBuildDependencyFile;
+             GenerateBuildRuntimeConfigurationFiles
+           " (previous value: "
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (201,5)
+       Property reassignment: $(CoreCleanDependsOn)="
+             _SdkBeforeClean;
+             
+           " (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (210,5)
+       Property reassignment: $(RebuildDependsOn)="
+             _SdkBeforeRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           
+           " (previous value: "
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (217,5)
+       Property reassignment: $(CompileDependsOn)="
+             
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ;
+             _CreateAppHost;
+             _CreateComHost;
+             _GetIjwHostPaths;
+           " (previous value: "
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (783,5)
+       Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+             
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ;
+             CoreGenerateSatelliteAssemblies
+           " (previous value: "
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (1183,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+             
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ;
+             _GenerateDesignerDepsFile;
+             _GenerateDesignerRuntimeConfigFile;
+             GetCopyToOutputDirectoryItems;
+             _GatherDesignerShadowCopyFiles;
+           " (previous value: "
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets (21,5)
+       Property reassignment: $(_GenerateToolsSettingsFileCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.toolssettingsinput.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.toolssettingsinput.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (68,5)
+       Property reassignment: $(_ShimInputCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.shiminput.cache" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.shiminput.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (137,5)
+       Property reassignment: $(_ShimCreatedSentinelFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/Release/net8.0/FasterXchange.Infrastructure.shimcreated.sentinel" (previous value: "obj\Release/net8.0/FasterXchange.Infrastructure.shimcreated.sentinel") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (139,5)
+       Property reassignment: $(DefineConstants)="TRACE;RELEASE" (previous value: "TRACE") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (31,5)
+       Property reassignment: $(DefineConstants)="TRACE;RELEASE;NET;NET8_0;NETCOREAPP" (previous value: "TRACE;RELEASE") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (34,5)
+       Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (48,5)
+       Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (34,5)
+       Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (59,5)
+       Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.targets (60,5)
+       Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Containers/build/Microsoft.NET.Build.Containers.targets (5,5)
+       Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Containers/build/Microsoft.NET.Build.Containers.targets (15,5)
+       Overriding target "ResolveFrameworkReferences" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "Run" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "Run" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/system.text.json/8.0.0/buildTransitive/net6.0/System.Text.Json.targets (11,11)" does not exist in the project, and will be ignored.
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/system.text.json/8.0.0/buildTransitive/net6.0/System.Text.Json.targets (23,11)" does not exist in the project, and will be ignored.
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets (11,11)" does not exist in the project, and will be ignored.
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Logging.Abstractions.targets (23,11)" does not exist in the project, and will be ignored.
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/microsoft.extensions.options/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Options.targets (11,11)" does not exist in the project, and will be ignored.
+       The target "ResolveNuGetPackageAssets" listed in an AfterTargets attribute at "/Users/ololadeoyebanji/.nuget/packages/microsoft.extensions.options/8.0.0/buildTransitive/net6.0/Microsoft.Extensions.Options.targets (23,11)" does not exist in the project, and will be ignored.
+     1>Project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" on node 1 (default targets).
+     1>Target "_CheckForUnsupportedTargetFramework" skipped, due to false condition; ('$(_UnsupportedTargetFrameworkError)' == 'true') was evaluated as ('' == 'true').
+     1>Target "_CollectTargetFrameworkForTelemetry" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Using "AllowEmptyTelemetry" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "AllowEmptyTelemetry"
+       Done executing task "AllowEmptyTelemetry".
+     1>Done building target "_CollectTargetFrameworkForTelemetry" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForUnsupportedTargetPlatformIdentifier" skipped, due to false condition; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) And ('$(DesignTimeBuild)' != 'true' Or '@(MissingWorkloadPack)' == '')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True And ('' != 'true' Or '' == '')).
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+     1>Target "_CheckForUnsupportedNETCoreVersion" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(_TargetFrameworkVersionWithoutV)' > '$(NETCoreAppMaximumVersion)' and '$(DisplayVSMessage)' != 'true') was evaluated as ('8.0' > '9.0' and '' != 'true').
+       Task "NETSdkError" skipped, due to false condition; ('$(DisplayVSMessage)' == 'true') was evaluated as ('' == 'true').
+     1>Done building target "_CheckForUnsupportedNETCoreVersion" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForEolTargetFrameworks" skipped, due to false condition; ('@(_EolNetCoreTargetFrameworkVersions->AnyHaveMetadataValue('Identity', '$(_TargetFrameworkVersionWithoutV)'))' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(CheckEolTargetFramework)' == 'true') was evaluated as ('false' and '.NETCoreApp' == '.NETCoreApp' and '' == 'true').
+       Target "_CheckForEolWorkloads" skipped, due to false condition; ('@(EolWorkload)' != '' and '$(CheckEolWorkloads)' == 'true') was evaluated as ('' != '' and 'true' == 'true').
+       Target "_CheckForNotRecommendedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' and $([MSBuild]::VersionLessThan($(TargetFrameworkVersion), '2.0'))) was evaluated as ('.NETCoreApp' == '.NETStandard' and False).
+     1>Target "_CheckForUnsupportedCppNETCoreVersion" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NETSdkError" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(_TargetFrameworkVersionWithoutV)' < '3.1' and ('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true')) was evaluated as ('.NETCoreApp' == '.NETCoreApp' and '8.0' < '3.1' and ('C#' == 'C++' and '' != 'true')).
+     1>Done building target "_CheckForUnsupportedCppNETCoreVersion" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForUnsupportedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' And '$(NETStandardMaximumVersion)' != '') was evaluated as ('.NETCoreApp' == '.NETStandard' And '' != '').
+       Target "_CheckForUnsupportedTargetFrameworkAndFeatureCombination" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETFramework') was evaluated as ('.NETCoreApp' == '.NETFramework').
+       Target "_CheckForSupportedOSPlatformVersionHigherThanTargetPlatformVersion" skipped, due to false condition; ('$(TargetPlatformVersion)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0))) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True).
+       Target "_CheckForInvalidTargetPlatformVersion" skipped, due to false condition; ('$(TargetPlatformVersion)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) and ('$(Language)' != 'C++' or '$(_EnablePackageReferencesInVCProjects)' == 'true')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True and ('C#' != 'C++' or '' == 'true')).
+     1>Target "_CheckForUnsupportedArtifactsPath" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NetSdkError" skipped, due to false condition; ('$(UseArtifactsOutput)' == 'true' and '$(_ArtifactsPathSetEarly)' != 'true') was evaluated as ('' == 'true' and '' != 'true').
+       Task "NetSdkError" skipped, due to false condition; ('$(_ArtifactsPathLocationType)' == 'ProjectFolder') was evaluated as ('' == 'ProjectFolder').
+     1>Done building target "_CheckForUnsupportedArtifactsPath" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+       Target "_CheckForUnsupportedAppHostUsage" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(HasRuntimeOutput)' == 'true') was evaluated as ('.NETCoreApp' == '.NETCoreApp' and '' == 'true').
+     1>Target "_CheckForUnsupportedHostingUsage" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NETSdkWarning" skipped, due to false condition; ('$(SelfContained)' == 'true' and '$(EnableComHosting)' == 'true') was evaluated as ('' == 'true' and '' == 'true').
+     1>Done building target "_CheckForUnsupportedHostingUsage" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "_CheckAndUnsetUnsupportedPrefer32Bit" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NETSdkWarning" skipped, due to false condition; ('$(Prefer32Bit)' == 'true') was evaluated as ('false' == 'true').
+     1>Done building target "_CheckAndUnsetUnsupportedPrefer32Bit" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckAndUnsetUnsupportedPreferNativeArm64" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and '$(PreferNativeArm64)' == 'true') was evaluated as ('.NETCoreApp' == '.NETCoreApp' and 'false' == 'true').
+       Target "_CheckForMismatchingPlatform" skipped, due to false condition; ('$(RuntimeIdentifier)' != '' and '$(PlatformTarget)' != '') was evaluated as ('' != '' and '' != '').
+     1>Target "_CheckForLanguageAndFeatureCombinationSupport" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(OutputType) != 'library' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp') was evaluated as (('C#' == 'C++' and '' != 'true') and Library != 'library' and '.NETCoreApp' == '.NETCoreApp').
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(EnableComHosting) == 'true') was evaluated as (('C#' == 'C++' and '' != 'true') and  == 'true').
+       Task "NETSdkError" skipped, due to false condition; (('$(Language)' == 'C++' and '$(_EnablePackageReferencesInVCProjects)' != 'true') and $(SelfContained) == 'true') was evaluated as (('C#' == 'C++' and '' != 'true') and  == 'true').
+     1>Done building target "_CheckForLanguageAndFeatureCombinationSupport" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForNETCoreSdkIsPreview" skipped, due to false condition; ( '$(_NETCoreSdkIsPreview)' == 'true' AND '$(SuppressNETCoreSdkPreviewMessage)' != 'true' ) was evaluated as ( 'false' == 'true' AND '' != 'true' ).
+     1>Target "_GetProjectJsonPath" in file "/usr/local/share/dotnet/sdk/9.0.100/NuGet.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_GetRestoreProjectStyle" depends on it):
+       Task "GetRestoreProjectJsonPathTask" skipped, due to false condition; ( '$(RestoreProjectStyle)' == 'ProjectJson' OR '$(RestoreProjectStyle)' == '' ) was evaluated as ( 'PackageReference' == 'ProjectJson' OR 'PackageReference' == '' ).
+     1>Done building target "_GetProjectJsonPath" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForUnsupportedTargetPlatformIdentifier" skipped, due to false condition; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) And ('$(DesignTimeBuild)' != 'true' Or '@(MissingWorkloadPack)' == '')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True And ('' != 'true' Or '' == '')).
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+       Target "_CheckForNotRecommendedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' and $([MSBuild]::VersionLessThan($(TargetFrameworkVersion), '2.0'))) was evaluated as ('.NETCoreApp' == '.NETStandard' and False).
+       Target "_CheckForUnsupportedNETStandardVersion" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETStandard' And '$(NETStandardMaximumVersion)' != '') was evaluated as ('.NETCoreApp' == '.NETStandard' And '' != '').
+       Target "_CheckForUnsupportedTargetFrameworkAndFeatureCombination" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETFramework') was evaluated as ('.NETCoreApp' == '.NETFramework').
+     1>Target "UpdateAspNetToFrameworkReference" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckIfPackageReferenceShouldBeFrameworkReference" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+       Task "NETSdkError" skipped, due to false condition; ('$(_ShouldRemoveAspNetCoreAll)' == 'true') was evaluated as ('False' == 'true').
+       Task "CheckIfPackageReferenceShouldBeFrameworkReference"
+       Done executing task "CheckIfPackageReferenceShouldBeFrameworkReference".
+       Task "NETSdkWarning" skipped, due to false condition; ('$(_ShouldRemoveAspNetCoreApp)' == 'true') was evaluated as ('False' == 'true').
+     1>Done building target "UpdateAspNetToFrameworkReference" in project "FasterXchange.Infrastructure.csproj".
+       Target "IncludeTargetingPackReference" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') was evaluated as ('.NETCoreApp,Version=v8.0' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+     1>Target "CheckForImplicitPackageReferenceOverrides" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ApplyImplicitVersions" depends on it):
+       Using "CheckForImplicitPackageReferenceOverrides" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForImplicitPackageReferenceOverrides"
+       Done executing task "CheckForImplicitPackageReferenceOverrides".
+     1>Done building target "CheckForImplicitPackageReferenceOverrides" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "ApplyImplicitVersions" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CollectPackageReferences" depends on it):
+       Using "ApplyImplicitVersions" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ApplyImplicitVersions"
+       Done executing task "ApplyImplicitVersions".
+     1>Done building target "ApplyImplicitVersions" in project "FasterXchange.Infrastructure.csproj".
+       Target "CheckForImplicitPackageReferenceOverrides" skipped. Previously built successfully.
+       Target "AddWindowsSdkKnownFrameworkReferences" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' And '$(TargetPlatformIdentifier)' == 'Windows') was evaluated as ('.NETCoreApp' == '.NETCoreApp' And '' == 'Windows').
+       Target "_NormalizeTargetPlatformVersion" skipped, due to false condition; ('$(TargetPlatformVersion)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) and ('$(Language)' != 'C++' or '$(_EnablePackageReferencesInVCProjects)' == 'true')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True and ('C#' != 'C++' or '' == 'true')).
+     1>Target "_ComputeToolPackInputsToProcessFrameworkReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ProcessFrameworkReferences" depends on it):
+     1>Done building target "_ComputeToolPackInputsToProcessFrameworkReferences" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "ProcessFrameworkReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CollectPackageReferences" depends on it):
+       Using "CheckForDuplicateFrameworkReferences" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForDuplicateFrameworkReferences"
+       Done executing task "CheckForDuplicateFrameworkReferences".
+       Using "ProcessFrameworkReferences" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ProcessFrameworkReferences"
+       Done executing task "ProcessFrameworkReferences".
+       Using "ResolveAppHosts" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ResolveAppHosts"
+       Done executing task "ResolveAppHosts".
+     1>Done building target "ProcessFrameworkReferences" in project "FasterXchange.Infrastructure.csproj".
+       Target "IncludeTargetingPackReference" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') was evaluated as ('.NETCoreApp,Version=v8.0' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+       Target "_CheckMicrosoftNetCompilersToolsetFrameworkPackageReference" skipped, due to false condition; ('$(MSBuildRuntimeType)' == 'Full') was evaluated as ('Core' == 'Full').
+     1>Target "_CheckForObsoleteDotNetCliToolReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.ObsoleteReferences.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CollectPackageReferences" depends on it):
+       Task "NETSdkWarning" skipped, due to false condition; ( '%(_ReferenceToObsoleteDotNetCliTool.Identity)' != '' ) was evaluated as ( '' != '' ).
+     1>Done building target "_CheckForObsoleteDotNetCliToolReferences" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "CollectPackageReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/NuGet.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_GetRestoreProjectStyle" depends on it):
+       Assembly loaded during TaskRun: NuGet.Build.Tasks, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll, MVID: 6ba667f6-eb98-44a6-abd7-9af314cbca52, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Common, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/NuGet.Common.dll, MVID: 42d11c09-4d1e-4491-94eb-cfab0ade74d5, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.Commands, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/NuGet.Commands.dll, MVID: 3020b40e-5452-4b75-88e6-7ac526d1aa7b, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll)
+       Assembly loaded during TaskRun: NuGet.ProjectModel, Version=6.12.0.127, Culture=neutral, PublicKeyToken=31bf3856ad364e35 (location: /usr/local/share/dotnet/sdk/9.0.100/NuGet.ProjectModel.dll, MVID: c1f35b64-6fe8-4bba-8a5f-90259239bac8, AssemblyLoadContext: MSBuild plugin /usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll)
+       Using "CheckForDuplicateNuGetItemsTask" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll".
+       Task "CheckForDuplicateNuGetItemsTask"
+       Done executing task "CheckForDuplicateNuGetItemsTask".
+     1>Done building target "CollectPackageReferences" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "_GetRestoreProjectStyle" in file "/usr/local/share/dotnet/sdk/9.0.100/NuGet.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "EnableIntermediateOutputPathMismatchWarning" depends on it):
+       Using "GetRestoreProjectStyleTask" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/NuGet.Build.Tasks.dll".
+       Task "GetRestoreProjectStyleTask"
+       Done executing task "GetRestoreProjectStyleTask".
+     1>Done building target "_GetRestoreProjectStyle" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "EnableIntermediateOutputPathMismatchWarning" in file "/usr/local/share/dotnet/sdk/9.0.100/NuGet.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+     1>Done building target "EnableIntermediateOutputPathMismatchWarning" in project "FasterXchange.Infrastructure.csproj".
+       Target "ApplyImplicitVersions" skipped. Previously built successfully.
+       Target "CheckForImplicitPackageReferenceOverrides" skipped. Previously built successfully.
+     1>Target "CheckForDuplicateItems" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_CheckForInvalidConfigurationAndPlatform" depends on it):
+       Using "CheckForDuplicateItems" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "CheckForDuplicateItems"
+       Done executing task "CheckForDuplicateItems".
+       Task "CheckForDuplicateItems"
+       Done executing task "CheckForDuplicateItems".
+       Task "CheckForDuplicateItems"
+       Done executing task "CheckForDuplicateItems".
+     1>Done building target "CheckForDuplicateItems" in project "FasterXchange.Infrastructure.csproj".
+       Target "WarnForExplicitVersions" skipped, due to false condition; ('@(SdkBuildWarning)' != '') was evaluated as ('' != '').
+       Target "_CheckForFailedSDKResolution" skipped, due to false condition; ('$(SdkResolverHonoredGlobalJson)' == 'false') was evaluated as ('' == 'false').
+       Target "_WarnWhenUsingNET9AndVSPriorTo1712" skipped, due to false condition; ($([MSBuild]::VersionLessThan($(MSBuildVersion), '17.12.0')) and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(_TargetFrameworkVersionWithoutV), '9.0'))) was evaluated as (False and '.NETCoreApp' == '.NETCoreApp' and False).
+       Target "_CheckForInvalidWindowsDesktopTargetingConfiguration" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(_TargetFrameworkVersionWithoutV), '5.0')) and ('$(UseWindowsForms)' == 'true' or '$(UseWPF)' == 'true')) was evaluated as ('.NETCoreApp' == '.NETCoreApp' and True and ('' == 'true' or '' == 'true')).
+       Target "_CheckForUnnecessaryWindowsDesktopSDK" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(_TargetFrameworkVersionWithoutV), '5.0')) and '$(_MicrosoftWindowsDesktopSdkImported)' == 'true' and '$(TargetFrameworks)' == '') was evaluated as ('.NETCoreApp' == '.NETCoreApp' and True and '' == 'true' and '' == '').
+       Target "ProcessFrameworkReferences" skipped. Previously built successfully.
+       Target "IncludeTargetingPackReference" skipped, due to false condition; ('$(TargetFrameworkMoniker)' != '' and '$(TargetFrameworkIdentifier)' == '.NETFramework' and '$(AutomaticallyUseReferenceAssemblyPackages)' == 'true') was evaluated as ('.NETCoreApp,Version=v8.0' != '' and '.NETCoreApp' == '.NETFramework' and 'true' == 'true').
+     1>Target "_CheckForInvalidConfigurationAndPlatform" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "BeforeBuild" depends on it):
+       Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Using "Message" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "Message"
+         Configuration=Release
+       Done executing task "Message".
+       Task "Message"
+         Platform=AnyCPU
+       Done executing task "Message".
+       Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin/Release/net8.0/' != '' and !HasTrailingSlash('bin/Release/net8.0/')).
+       Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj/Release/net8.0/' != '' and !HasTrailingSlash('obj/Release/net8.0/')).
+       Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj/' != '' and !HasTrailingSlash('obj/')).
+       Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(Prefer32Bit)' == 'true' and '$(PreferNativeArm64)' == 'true' ) was evaluated as ( 'false' == 'true' and 'false' == 'true' ).
+       Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(NoWin32Manifest)' == 'true' and '$(PreferNativeArm64)' == 'true' ) was evaluated as ( '' == 'true' and 'false' == 'true' ).
+       Task "MSBuildInternalMessage" skipped, due to false condition; ( '$(PreferNativeArm64)' == 'true' and '$(Platform)' != 'AnyCPU' ) was evaluated as ( 'false' == 'true' and 'AnyCPU' != 'AnyCPU' ).
+       Task "Error" skipped, due to false condition; ( '$(_InitialMSBuildProjectExtensionsPath)' != '' And '$(MSBuildProjectExtensionsPath)' != '$(_InitialMSBuildProjectExtensionsPath)' ) was evaluated as ( '/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/' != '' And '/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/' != '/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/' ).
+       Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( 'true' == 'true' And 'obj/' != 'obj/' And 'obj/' != '/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/obj/' ).
+     1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "ValidateCommandLineProperties" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "BeforeBuild" depends on it):
+     1>Done building target "ValidateCommandLineProperties" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "BeforeBuild" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "Build" depends on it):
+     1>Done building target "BeforeBuild" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForBuildWithNoBuild" skipped, due to false condition; ('$(NoBuild)' == 'true' and '$(GeneratePackageOnBuild)' != 'true') was evaluated as ('' == 'true' and 'false' != 'true').
+     1>Target "BuildOnlySettings" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CoreBuild" depends on it):
+     1>Done building target "BuildOnlySettings" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForUnsupportedTargetFramework" skipped, due to false condition; ('$(_UnsupportedTargetFrameworkError)' == 'true') was evaluated as ('' == 'true').
+       Target "_CheckForUnsupportedTargetPlatformIdentifier" skipped, due to false condition; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) And ('$(DesignTimeBuild)' != 'true' Or '@(MissingWorkloadPack)' == '')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True And ('' != 'true' Or '' == '')).
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+     1>Target "GetFrameworkPaths" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetFrameworkPaths" in project "FasterXchange.Infrastructure.csproj".
+       Target "_CheckForUnsupportedTargetFramework" skipped, due to false condition; ('$(_UnsupportedTargetFrameworkError)' == 'true') was evaluated as ('' == 'true').
+       Target "_CheckForUnsupportedTargetPlatformIdentifier" skipped, due to false condition; ('$(TargetPlatformIdentifier)' != '' and '$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(TargetFrameworkVersion), 5.0)) And ('$(DesignTimeBuild)' != 'true' Or '@(MissingWorkloadPack)' == '')) was evaluated as ('' != '' and '.NETCoreApp' == '.NETCoreApp' and True And ('' != 'true' Or '' == '')).
+       Target "_CheckForMissingWorkload" skipped, due to false condition; ('@(MissingWorkloadPack)' != '' And '$(DesignTimeBuild)' != 'true') was evaluated as ('' != '' And '' != 'true').
+     1>Target "GetReferenceAssemblyPaths" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "PrepareForBuild" depends on it):
+     1>Done building target "GetReferenceAssemblyPaths" in project "FasterXchange.Infrastructure.csproj".
+       Target "AssignLinkMetadata" skipped, due to false condition; ( '$(SynthesizeLinkMetadata)' == 'true' ) was evaluated as ( '' == 'true' ).
+       Target "_VerifyPackReleaseConfigurations" skipped, due to false condition; ('$(_IsPacking)' == 'true' and '$(DOTNET_CLI_DISABLE_PUBLISH_AND_PACK_RELEASE)' != 'true' and '$(DOTNET_CLI_LAZY_PUBLISH_AND_PACK_RELEASE_FOR_SOLUTIONS)' == 'true') was evaluated as ('' == 'true' and '' != 'true' and '' == 'true').
+     1>Target "PrepareForBuild" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CoreBuild" depends on it):
+       Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "FindAppConfigFile"
+       Done executing task "FindAppConfigFile".
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MakeDir"
+       Done executing task "MakeDir".
+     1>Done building target "PrepareForBuild" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "GenerateGlobalUsings" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.GenerateGlobalUsings.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "CoreBuild" depends on it):
+       Using "GenerateGlobalUsings" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "GenerateGlobalUsings"
+       Done executing task "GenerateGlobalUsings".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "WriteLinesToFile"
+         Skipping write to file "obj/Release/net8.0/FasterXchange.Infrastructure.GlobalUsings.g.cs" because content would not change.
+       Done executing task "WriteLinesToFile".
+     1>Done building target "GenerateGlobalUsings" in project "FasterXchange.Infrastructure.csproj".
+       Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+     1>Target "BeforeResolveReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolveReferences" depends on it):
+     1>Done building target "BeforeResolveReferences" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "IgnoreJavaScriptOutputAssembly" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "AssignProjectConfiguration" depends on it):
+     1>Done building target "IgnoreJavaScriptOutputAssembly" in project "FasterXchange.Infrastructure.csproj".
+       Target "ProcessFrameworkReferences" skipped. Previously built successfully.
+     1>Target "_DefaultMicrosoftNETPlatformLibrary" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageAssets" depends on it):
+     1>Done building target "_DefaultMicrosoftNETPlatformLibrary" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "_ComputePackageReferencePublish" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.Shared.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageAssets" depends on it):
+     1>Done building target "_ComputePackageReferencePublish" in project "FasterXchange.Infrastructure.csproj".
+       Target "_ResolveCompilerVersion" skipped, due to false condition; ('$(CompilerApiVersion)' == '' And
+                            ('$(Language)' == 'C#' Or '$(Language)' == 'VB') And
+                            Exists('$(RoslynTargetsPath)\Microsoft.Build.Tasks.CodeAnalysis.dll')) was evaluated as ('roslyn4.12' == '' And
+                            ('C#' == 'C#' Or 'C#' == 'VB') And
+                            Exists('/usr/local/share/dotnet/sdk/9.0.100/Roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll')).
+     1>Target "ResolvePackageAssets" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolveLockFileReferences" depends on it):
+       Using "ResolvePackageAssets" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "ResolvePackageAssets"
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1903: Package 'Microsoft.Extensions.Caching.Memory' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-qj66-m88j-hmgj
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1902: Package 'Microsoft.IdentityModel.JsonWebTokens' 6.19.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1903: Package 'Npgsql' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1902: Package 'System.IdentityModel.Tokens.Jwt' 6.19.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-59j7-ghrg-fj52
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1903: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4
+     1>/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj : warning NU1903: Package 'System.Text.Json' 8.0.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w
+       Done executing task "ResolvePackageAssets".
+     1>Done building target "ResolvePackageAssets" in project "FasterXchange.Infrastructure.csproj".
+       Target "AdjustDefaultPlatformTargetForNetFrameworkExeWithNoNativeCopyLocalItems" skipped, due to false condition; ('$(_UsingDefaultPlatformTarget)' == 'true' and
+                            '$(_UsingDefaultRuntimeIdentifier)' == 'true') was evaluated as ('true' == 'true' and
+                            '' == 'true').
+       Target "_CheckForTransitiveWindowsDesktopDependencies" skipped, due to false condition; ('$(TargetFrameworkIdentifier)' == '.NETCoreApp' and $([MSBuild]::VersionGreaterThanOrEquals($(_TargetFrameworkVersionWithoutV), '5.0')) and '$(TargetPlatformIdentifier)' != 'Windows' and '@(TransitiveFrameworkReference)' != '') was evaluated as ('.NETCoreApp' == '.NETCoreApp' and True and '' != 'Windows' and '' != '').
+       Target "AddTransitiveFrameworkReferences" skipped, due to false condition; ('@(TransitiveFrameworkReference)' != '') was evaluated as ('' != '').
+     1>Target "ResolveLockFileReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageDependenciesForBuild" depends on it):
+       Using "JoinItems" task from assembly "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/../tools/net9.0/Microsoft.NET.Build.Tasks.dll".
+       Task "JoinItems"
+       Done executing task "JoinItems".
+     1>Done building target "ResolveLockFileReferences" in project "FasterXchange.Infrastructure.csproj".
+       Target "ResolvePackageAssets" skipped. Previously built successfully.
+     1>Target "ResolveLockFileAnalyzers" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageDependenciesForBuild" depends on it):
+     1>Done building target "ResolveLockFileAnalyzers" in project "FasterXchange.Infrastructure.csproj".
+       Target "ResolvePackageAssets" skipped. Previously built successfully.
+       Target "RunProduceContentAssets" skipped, due to false condition; ('@(_ContentFilesToPreprocess)' != '' and '$(_CleaningWithoutRebuilding)' != 'true') was evaluated as ('' != '' and '' != 'true').
+     1>Target "ResolveLockFileCopyLocalFiles" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageDependenciesForBuild" depends on it):
+     1>Done building target "ResolveLockFileCopyLocalFiles" in project "FasterXchange.Infrastructure.csproj".
+       Target "ResolveRuntimePackAssets" skipped, due to false condition; ('@(RuntimePack)' != '') was evaluated as ('' != '').
+       Target "RunProduceContentAssets" skipped, due to false condition; ('@(_ContentFilesToPreprocess)' != '' and '$(_CleaningWithoutRebuilding)' != 'true') was evaluated as ('' != '' and '' != 'true').
+       Target "ResolvePackageAssets" skipped. Previously built successfully.
+     1>Target "IncludeTransitiveProjectReferences" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolvePackageDependenciesForBuild" depends on it):
+     1>Done building target "IncludeTransitiveProjectReferences" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "ResolvePackageDependenciesForBuild" in file "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "AssignProjectConfiguration" depends on it):
+     1>Done building target "ResolvePackageDependenciesForBuild" in project "FasterXchange.Infrastructure.csproj".
+       Target "_System_Text_JsonAnalyzerMultiTargeting" skipped, due to false condition; ('$(SupportsRoslynComponentVersioning)' != 'true') was evaluated as ('true' != 'true').
+       Target "_System_Text_JsonRemoveAnalyzers" skipped, due to false condition; ('$(DisableSystemTextJsonSourceGenerator)' == 'true') was evaluated as ('' == 'true').
+       Target "_Microsoft_Extensions_Logging_AbstractionsAnalyzerMultiTargeting" skipped, due to false condition; ('$(SupportsRoslynComponentVersioning)' != 'true') was evaluated as ('true' != 'true').
+       Target "_Microsoft_Extensions_Logging_AbstractionsRemoveAnalyzers" skipped, due to false condition; ('$(DisableMicrosoftExtensionsLoggingSourceGenerator)' == 'true') was evaluated as ('' == 'true').
+       Target "_Microsoft_Extensions_OptionsAnalyzerMultiTargeting" skipped, due to false condition; ('$(SupportsRoslynComponentVersioning)' != 'true') was evaluated as ('true' != 'true').
+       Target "_Microsoft_Extensions_OptionsRemoveAnalyzers" skipped, due to false condition; ('$(DisableMicrosoftExtensionsOptionsSourceGenerator)' == 'true') was evaluated as ('' == 'true').
+     1>Target "AssignProjectConfiguration" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "ResolveReferences" depends on it):
+       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignProjectConfiguration"
+         Project reference "../FasterXchange.Domain/FasterXchange.Domain.csproj" has not been resolved.
+         Project reference "../FasterXchange.Application/FasterXchange.Application.csproj" has not been resolved.
+       Done executing task "AssignProjectConfiguration".
+     1>Done building target "AssignProjectConfiguration" in project "FasterXchange.Infrastructure.csproj".
+       Target "AssignProjectConfiguration" skipped. Previously built successfully.
+     1>Target "_SplitProjectReferencesByFileExistence" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "PrepareProjectReferences" depends on it):
+       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as (''=='true' and '../FasterXchange.Domain/FasterXchange.Domain.csproj;../FasterXchange.Application/FasterXchange.Application.csproj'!='').
+     1>Done building target "_SplitProjectReferencesByFileExistence" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "_AddOutputPathToGlobalPropertiesToRemove" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "_GetProjectReferenceTargetFrameworkProperties" depends on it):
+     1>Done building target "_AddOutputPathToGlobalPropertiesToRemove" in project "FasterXchange.Infrastructure.csproj".
+     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (target "PrepareProjectReferences" depends on it):
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+         Removing Properties:
+           TargetFramework
+           RuntimeIdentifier
+           SelfContained
+     0>/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.props(49,11): message : Property 'MSBuildExtensionsPath' with value '/usr/local/share/dotnet/sdk/9.0.100/' expanded from the environment.
+       Property reassignment: $(MSBuildProjectExtensionsPath)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/" (previous value: "obj\") at /usr/local/share/dotnet/sdk/9.0.100/Current/Microsoft.Common.props (60,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Current/Microsoft.Common.props(84,119): message : Property 'MSBuildUserExtensionsPath' with value '/Users/ololadeoyebanji/Library/Application Support/Microsoft\MSBuild' expanded from the environment.
+       The "Configuration" property is a global property, and cannot be modified.
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem}" (previous value: "{CandidateAssemblyFiles}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (90,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (91,5)
+       Property reassignment: $(AssemblySearchPaths)="{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory};{RawFileName}" (previous value: "{CandidateAssemblyFiles};{HintPathFromItem};{TargetFrameworkDirectory}") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.props (92,5)
+       Property reassignment: $(TargetsForTfmSpecificContentInPackage)=";PackTool;_PackProjectToolValidation" (previous value: ";PackTool") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackProjectTool.props (15,5)
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(PublishProfileImported)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.ImportPublishProfile.targets (28,5)
+       Property reassignment: $(TargetPlatformVersion)="" (previous value: "0.0") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets (69,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**" (previous value: ";bin\Release//**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (122,5)
+       Property reassignment: $(OutputPath)="bin\Release/net8.0/" (previous value: "bin\Release/") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (137,5)
+       Property reassignment: $(IntermediateOutputPath)="obj\Release/net8.0/" (previous value: "obj\Release/") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DefaultOutputPaths.targets (142,5)
+       Property reassignment: $(_FrameworkIdentifierForImplicitDefine)="NET" (previous value: "NETCOREAPP") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (187,5)
+       Property reassignment: $(_FrameworkVersionForImplicitDefine)="8_0" (previous value: "8.0") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.BeforeCommon.targets (192,5)
+       Property reassignment: $(CommandLineArgsForDesignTimeEvaluation)="-langversion:12.0 -define:TRACE" (previous value: "-langversion:12.0") at /usr/local/share/dotnet/sdk/9.0.100/Roslyn/Microsoft.CSharp.Core.targets (205,5)
+       The "Configuration" property is a global property, and cannot be modified.
+       Property reassignment: $(_DebugSymbolsProduced)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (179,5)
+       Property reassignment: $(_DocumentationFileProduced)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (185,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="FasterXc.6125CEBF" (previous value: "FasterXchange.Domain.csproj") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (392,5)
+       Property reassignment: $(MSBuildCopyMarkerName)="FasterXc.6125CEBF.Up2Date" (previous value: "FasterXc.6125CEBF") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (393,5)
+       Assembly loaded during Evaluation: System.IO.Pipes, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /usr/local/share/dotnet/shared/Microsoft.NETCore.App/9.0.0/System.IO.Pipes.dll, MVID: 548cc0e0-6d1a-4bcb-8d72-8ddcbc010bcf, AssemblyLoadContext: Default)
+       Property reassignment: $(ProcessorArchitecture)="msil" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (541,5)
+       Property reassignment: $(DelaySign)="" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (580,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets(2579,5): message : Property 'LocalAppData' with value '/Users/ololadeoyebanji/Library/Application Support' expanded from the environment.
+       Property reassignment: $(_SGenGenerateSerializationAssembliesConfig)="Auto" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (3897,5)
+       Property reassignment: $(_TargetsThatPrepareProjectReferences)="
+             AssignProjectConfiguration;
+             _SplitProjectReferencesByFileExistence
+           " (previous value: "_SplitProjectReferencesByFileExistence") at /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets (5100,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets(6846,5): message : Property 'MSBuildExtensionsPath32' with value '/usr/local/share/dotnet/sdk/9.0.100' expanded from the environment.
+       Assembly loaded during Evaluation: System.Net.Sockets, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a (location: /usr/local/share/dotnet/shared/Microsoft.NETCore.App/9.0.0/System.Net.Sockets.dll, MVID: fe9d55e2-6017-4f34-8367-3ee6d30fdb23, AssemblyLoadContext: Default)
+       Property reassignment: $(ProjectAssetsCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.assets.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.assets.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (29,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           " (previous value: "
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (80,5)
+       Property reassignment: $(PrepareResourcesDependsOn)="
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+             
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           
+           " (previous value: "
+             ;
+             PrepareResourceNames;
+             ResGen;
+             CompileLicxFiles
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets (86,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**" (previous value: ";bin\Release//**;obj\Release//**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (27,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**" (previous value: ";bin\Release//**;obj\Release//**;bin\/**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (29,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (32,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (33,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (34,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (35,5)
+       Property reassignment: $(DefaultItemExcludes)=";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc;**/.DS_Store" (previous value: ";bin\Release//**;obj\Release//**;bin\/**;obj\/**;**/*.user;**/*.*proj;**/*.sln;**/*.vssscc") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.DefaultItems.targets (36,5)
+       Property reassignment: $(ResolveAssemblyReferencesDependsOn)="
+             
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ;
+             ResolveTargetingPackAssets;
+           " (previous value: "
+             
+             ResolveProjectReferences;
+             FindInvalidProjectReferences;
+             GetFrameworkPaths;
+             GetReferenceAssemblyPaths;
+             PrepareForBuild;
+             ResolveSDKReferences;
+             ExpandSDKReferences;
+           ;
+             ResolvePackageDependenciesForBuild;
+             _HandlePackageFileConflicts;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets (14,5)
+       Property reassignment: $(_GenerateRuntimeConfigurationPropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.genruntimeconfig.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.genruntimeconfig.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (44,5)
+       Property reassignment: $(_GeneratePublishDependencyFilePropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.genpublishdeps.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.genpublishdeps.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (46,5)
+       Property reassignment: $(_GenerateSingleFileBundlePropertyInputsCache)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.genbundle.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.genbundle.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (48,5)
+       Property reassignment: $(GenerateRuntimeConfigDevFile)="false" (previous value: "true") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (81,5)
+       /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets(96,5): message : Property 'HOME' with value '/Users/ololadeoyebanji' expanded from the environment.
+       Property reassignment: $(_DefaultUserProfileRuntimeStorePath)="/Users/ololadeoyebanji/.dotnet/store" (previous value: "/Users/ololadeoyebanji") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (98,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32" (previous value: "Any CPU,x86,x64") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (140,5)
+       Property reassignment: $(AvailablePlatforms)="Any CPU,x86,x64,ARM32,ARM64" (previous value: "Any CPU,x86,x64,ARM32") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (144,5)
+       Property reassignment: $(CoreBuildDependsOn)="
+             _CheckForBuildWithNoBuild;
+             
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ;
+             GenerateBuildDependencyFile;
+             GenerateBuildRuntimeConfigurationFiles
+           " (previous value: "
+             BuildOnlySettings;
+             PrepareForBuild;
+             PreBuildEvent;
+             ResolveReferences;
+             PrepareResources;
+             ResolveKeySource;
+             Compile;
+             ExportWindowsMDFile;
+             UnmanagedUnregistration;
+             GenerateSerializationAssemblies;
+             CreateSatelliteAssemblies;
+             GenerateManifests;
+             GetTargetPath;
+             PrepareForRun;
+             UnmanagedRegistration;
+             IncrementalClean;
+             PostBuildEvent
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (201,5)
+       Property reassignment: $(CoreCleanDependsOn)="
+             _SdkBeforeClean;
+             
+           " (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (210,5)
+       Property reassignment: $(RebuildDependsOn)="
+             _SdkBeforeRebuild;
+             
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           
+           " (previous value: "
+             BeforeRebuild;
+             Clean;
+             Build;
+             AfterRebuild;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (217,5)
+       Property reassignment: $(CompileDependsOn)="
+             
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ;
+             _CreateAppHost;
+             _CreateComHost;
+             _GetIjwHostPaths;
+           " (previous value: "
+             ResolveReferences;
+             ResolveKeySource;
+             SetWin32ManifestProperties;
+             _SetPreferNativeArm64Win32ManifestProperties;
+             FindReferenceAssembliesForReferences;
+             _GenerateCompileInputs;
+             BeforeCompile;
+             _TimeStampBeforeCompile;
+             _GenerateCompileDependencyCache;
+             CoreCompile;
+             _TimeStampAfterCompile;
+             AfterCompile;
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (783,5)
+       Property reassignment: $(CreateSatelliteAssembliesDependsOn)="
+             
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ;
+             CoreGenerateSatelliteAssemblies
+           " (previous value: "
+             ;
+             _GenerateSatelliteAssemblyInputs;
+             ComputeIntermediateSatelliteAssemblies;
+             GenerateSatelliteAssemblies
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets (1183,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.GitLab/build/Microsoft.SourceLink.GitLab.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.AzureRepos.Git/build/Microsoft.SourceLink.AzureRepos.Git.targets (13,5)
+       Property reassignment: $(SourceLinkUrlInitializerTargets)=";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl;_InitializeBitbucketGitSourceLinkUrl" (previous value: ";_InitializeGitHubSourceLinkUrl;_InitializeGitLabSourceLinkUrl;_InitializeAzureReposGitSourceLinkUrl") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (12,5)
+       Property reassignment: $(SourceControlManagerUrlTranslationTargets)=";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation;TranslateBitbucketGitUrlsInSourceControlInformation" (previous value: ";TranslateGitHubUrlsInSourceControlInformation;TranslateGitLabUrlsInSourceControlInformation;TranslateAzureReposGitUrlsInSourceControlInformation") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.SourceLink.Bitbucket.Git/build/Microsoft.SourceLink.Bitbucket.Git.targets (13,5)
+       Property reassignment: $(DesignerRuntimeImplementationProjectOutputGroupDependsOn)="
+             
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ;
+             _GenerateDesignerDepsFile;
+             _GenerateDesignerRuntimeConfigFile;
+             GetCopyToOutputDirectoryItems;
+             _GatherDesignerShadowCopyFiles;
+           " (previous value: "
+             ;
+             
+             ;
+             BuildOnlySettings;
+             PrepareForBuild;
+             AssignTargetPaths;
+             ResolveReferences
+           
+           ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets (21,5)
+       Property reassignment: $(_GenerateToolsSettingsFileCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.toolssettingsinput.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.toolssettingsinput.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (68,5)
+       Property reassignment: $(_ShimInputCacheFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.shiminput.cache" (previous value: "obj\Release/net8.0/FasterXchange.Domain.shiminput.cache") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (137,5)
+       Property reassignment: $(_ShimCreatedSentinelFile)="/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/obj/Release/net8.0/FasterXchange.Domain.shimcreated.sentinel" (previous value: "obj\Release/net8.0/FasterXchange.Domain.shimcreated.sentinel") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.PackTool.targets (139,5)
+       Property reassignment: $(DefineConstants)="TRACE;RELEASE" (previous value: "TRACE") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (31,5)
+       Property reassignment: $(DefineConstants)="TRACE;RELEASE;NET;NET8_0;NETCOREAPP" (previous value: "TRACE;RELEASE") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (34,5)
+       Property reassignment: $(WarningsAsErrors)=";NU1605;SYSLIB0011" (previous value: ";NU1605") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.CSharp.targets (48,5)
+       Property reassignment: $(PackageDescription)="Package Description" (previous value: "") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (34,5)
+       Property reassignment: $(GenerateNuspecDependsOn)="Build;_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; " (previous value: "_LoadPackInputItems; _GetTargetFrameworksOutput; _WalkEachTargetPerFramework; _GetPackageFiles; ") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/NuGet.Build.Tasks.Pack/build/NuGet.Build.Tasks.Pack.targets (59,5)
+       Property reassignment: $(_IsNotSetContainersTargetsDir)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/Sdk/Sdk.targets (60,5)
+       Property reassignment: $(_IsSDKContainerAllowedVersion)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Containers/build/Microsoft.NET.Build.Containers.targets (5,5)
+       Property reassignment: $(_ContainerIsTargetingNet8TFM)="true" (previous value: "false") at /usr/local/share/dotnet/sdk/9.0.100/Containers/build/Microsoft.NET.Build.Containers.targets (15,5)
+       Overriding target "ResolveFrameworkReferences" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "ResolveFrameworkReferences" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets".
+       Overriding target "Run" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "Run" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GenerateSupportedTargetFrameworkAlias" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GenerateSupportedTargetFrameworkAlias" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.targets".
+       Overriding target "GetReferenceAssemblyPaths" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetReferenceAssemblyPaths" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "GetFrameworkPaths" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetFrameworkPaths" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DisableStandardFrameworkResolution.targets".
+       Overriding target "DesignerRuntimeImplementationProjectOutputGroup" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "DesignerRuntimeImplementationProjectOutputGroup" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.DesignerSupport.targets".
+       Overriding target "Publish" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "Publish" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "ResolveReadyToRunCompilers" in project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.CrossGen.targets" with target "ResolveReadyToRunCompilers" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+       Overriding target "GetCopyToPublishDirectoryItems" in project "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" with target "GetCopyToPublishDirectoryItems" from project "/usr/local/share/dotnet/sdk/9.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Publish.targets".
+     1>Project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Infrastructure/FasterXchange.Infrastructure.csproj" (1) is building "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/FasterXchange.Domain.csproj" (2) on node 1 (GetTargetFrameworks target(s)).
+     2>Target "GetTargetFrameworksWithPlatformForSingleTargetFramework" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/FasterXchange.Domain.csproj" (target "GetTargetFrameworks" depends on it):
+     2>Using "CombineTargetFrameworkInfoProperties" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "CombineTargetFrameworkInfoProperties"
+       Done executing task "CombineTargetFrameworkInfoProperties".
+     2>Done building target "GetTargetFrameworksWithPlatformForSingleTargetFramework" in project "FasterXchange.Domain.csproj".
+     2>Target "GetTargetFrameworks" in file "/usr/local/share/dotnet/sdk/9.0.100/Microsoft.Common.CurrentVersion.targets" from project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/FasterXchange.Domain.csproj" (entry point):
+       Task "Error" skipped, due to false condition; ('$(IsCrossTargetingBuild)' == 'true') was evaluated as ('' == 'true').
+       Using "CombineXmlElements" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "CombineXmlElements"
+       Done executing task "CombineXmlElements".
+     2>Done building target "GetTargetFrameworks" in project "FasterXchange.Domain.csproj".
+     2>Done Building Project "/Users/ololadeoyebanji/RiderProjects/FasterXchange/FasterXchange.Domain/FasterXchange.Domain.csproj" (GetTargetFrameworks target(s)).

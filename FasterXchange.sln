@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# 
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasterXchange.Domain", "FasterXchange.Domain\FasterXchange.Domain.csproj", "{865FED83-AC49-48E7-9F00-F0D49B8EF631}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasterXchange.Application", "FasterXchange.Application\FasterXchange.Application.csproj", "{098927DA-BD11-45E4-9E94-6F120C51C237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasterXchange.Infrastructure", "FasterXchange.Infrastructure\FasterXchange.Infrastructure.csproj", "{0437B54F-8789-4B41-80DF-5DCC1722FB55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FasterXchange.Api", "FasterXchange.Api\FasterXchange.Api.csproj", "{C8920988-01E5-4618-B973-8DC5A66F2A12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{865FED83-AC49-48E7-9F00-F0D49B8EF631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865FED83-AC49-48E7-9F00-F0D49B8EF631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865FED83-AC49-48E7-9F00-F0D49B8EF631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865FED83-AC49-48E7-9F00-F0D49B8EF631}.Release|Any CPU.Build.0 = Release|Any CPU
+		{098927DA-BD11-45E4-9E94-6F120C51C237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{098927DA-BD11-45E4-9E94-6F120C51C237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{098927DA-BD11-45E4-9E94-6F120C51C237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{098927DA-BD11-45E4-9E94-6F120C51C237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0437B54F-8789-4B41-80DF-5DCC1722FB55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0437B54F-8789-4B41-80DF-5DCC1722FB55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0437B54F-8789-4B41-80DF-5DCC1722FB55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0437B54F-8789-4B41-80DF-5DCC1722FB55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8920988-01E5-4618-B973-8DC5A66F2A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8920988-01E5-4618-B973-8DC5A66F2A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8920988-01E5-4618-B973-8DC5A66F2A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8920988-01E5-4618-B973-8DC5A66F2A12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
