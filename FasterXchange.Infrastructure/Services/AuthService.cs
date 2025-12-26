@@ -5,6 +5,7 @@ using FasterXchange.Application.Contracts.Services;
 using FasterXchange.Domain.Entities;
 using Microsoft.Extensions.Logging;
 using OtpType = FasterXchange.Domain.Entities.OtpType;
+using BCryptNet = BCrypt.Net.BCrypt;
 
 namespace FasterXchange.Infrastructure.Services;
 
@@ -18,6 +19,9 @@ public class AuthService : IAuthService
     private readonly IOtpService _otpService;
     private readonly IJwtService _jwtService;
     private readonly ILogger<AuthService> _logger;
+    private const int MaxLoginFailures = 5;
+    private const int LockoutMinutes = 15;
+    private const int MaxPinFailures = 5;
 
     public AuthService(
         IUserRepository userRepository,
@@ -102,6 +106,7 @@ public class AuthService : IAuthService
 
         if (!isValid)
         {
+            await HandleFailedLoginAsync(request);
             return new VerifyOtpResponseDto
             {
                 Success = false,
@@ -280,6 +285,219 @@ public class AuthService : IAuthService
         };
     }
 
+    public async Task<AuthActionResponseDto> SetTransactionPinAsync(Guid userId, SetPinRequestDto request)
+    {
+        if (string.IsNullOrWhiteSpace(request.Pin) || string.IsNullOrWhiteSpace(request.ConfirmPin))
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "PIN and confirmation are required",
+                IsPinEnabled = false
+            };
+        }
+
+        if (request.Pin != request.ConfirmPin)
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "PINs do not match",
+                IsPinEnabled = false
+            };
+        }
+
+        if (request.Pin.Length is < 4 or > 6 || !request.Pin.All(char.IsDigit))
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "PIN must be 4-6 digits",
+                IsPinEnabled = false
+            };
+        }
+
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "User not found",
+                IsPinEnabled = false
+            };
+        }
+
+        user.TransactionPinHash = BCryptNet.HashPassword(request.Pin);
+        user.IsTransactionPinEnabled = true;
+        user.FailedPinAttempts = 0;
+        user.PinLockedUntil = null;
+        await _userRepository.UpdateAsync(user);
+
+        return new AuthActionResponseDto
+        {
+            Success = true,
+            Message = "Transaction PIN set successfully",
+            IsPinEnabled = true
+        };
+    }
+
+    public async Task<AuthActionResponseDto> VerifyTransactionPinAsync(Guid userId, VerifyPinRequestDto request)
+    {
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "User not found",
+                IsPinEnabled = false
+            };
+        }
+
+        if (!user.IsTransactionPinEnabled || string.IsNullOrEmpty(user.TransactionPinHash))
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "Transaction PIN not set",
+                IsPinEnabled = false
+            };
+        }
+
+        if (user.PinLockedUntil.HasValue && user.PinLockedUntil > DateTime.UtcNow)
+        {
+            var remainingMinutes = (int)(user.PinLockedUntil.Value - DateTime.UtcNow).TotalMinutes;
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = $"PIN is locked. Try again in {remainingMinutes} minutes.",
+                IsPinEnabled = true
+            };
+        }
+
+        var isValid = BCryptNet.Verify(request.Pin, user.TransactionPinHash);
+        if (!isValid)
+        {
+            user.FailedPinAttempts++;
+            if (user.FailedPinAttempts >= MaxPinFailures)
+            {
+                user.PinLockedUntil = DateTime.UtcNow.AddMinutes(LockoutMinutes);
+            }
+            await _userRepository.UpdateAsync(user);
+
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "Invalid PIN",
+                IsPinEnabled = true
+            };
+        }
+
+        user.FailedPinAttempts = 0;
+        user.PinLockedUntil = null;
+        await _userRepository.UpdateAsync(user);
+
+        return new AuthActionResponseDto
+        {
+            Success = true,
+            Message = "PIN verified",
+            IsPinEnabled = true
+        };
+    }
+
+    public async Task<TrustedDeviceDto?> TrustDeviceForBiometricsAsync(Guid userId, BiometricTrustRequestDto request)
+    {
+        if (string.IsNullOrWhiteSpace(request.DeviceId))
+            return null;
+
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user == null)
+            return null;
+
+        var device = await _deviceRepository.GetByDeviceIdAsync(userId, request.DeviceId);
+        if (device == null)
+        {
+            device = new Device
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                DeviceId = request.DeviceId,
+                DeviceName = request.DeviceName,
+                DeviceType = request.DeviceType,
+                IpAddress = request.IpAddress,
+                UserAgent = request.UserAgent,
+                IsTrusted = true,
+                BiometricKey = request.BiometricKey,
+                TrustedAt = DateTime.UtcNow,
+                FirstSeenAt = DateTime.UtcNow,
+                LastSeenAt = DateTime.UtcNow
+            };
+            device = await _deviceRepository.CreateAsync(device);
+        }
+        else
+        {
+            device.IsTrusted = true;
+            device.BiometricKey = request.BiometricKey ?? device.BiometricKey;
+            device.TrustedAt = DateTime.UtcNow;
+            device.DeviceName = request.DeviceName ?? device.DeviceName;
+            device.DeviceType = request.DeviceType ?? device.DeviceType;
+            device.IpAddress = request.IpAddress ?? device.IpAddress;
+            device.UserAgent = request.UserAgent ?? device.UserAgent;
+            device.LastSeenAt = DateTime.UtcNow;
+            device = await _deviceRepository.UpdateAsync(device);
+        }
+
+        user.IsBiometricEnabled = true;
+        await _userRepository.UpdateAsync(user);
+
+        return MapToTrustedDeviceDto(device);
+    }
+
+    public async Task<AuthActionResponseDto> DisableBiometricsForDeviceAsync(Guid userId, string deviceId)
+    {
+        var device = await _deviceRepository.GetByDeviceIdAsync(userId, deviceId);
+        if (device == null)
+        {
+            return new AuthActionResponseDto
+            {
+                Success = false,
+                Message = "Device not found"
+            };
+        }
+
+        device.IsTrusted = false;
+        device.BiometricKey = null;
+        device.TrustedAt = null;
+        await _deviceRepository.UpdateAsync(device);
+
+        var devices = await _deviceRepository.GetUserDevicesAsync(userId);
+        var stillTrusted = devices.Any(d => d.IsTrusted);
+
+        var user = await _userRepository.GetByIdAsync(userId);
+        if (user != null)
+        {
+            user.IsBiometricEnabled = stillTrusted;
+            await _userRepository.UpdateAsync(user);
+        }
+
+        return new AuthActionResponseDto
+        {
+            Success = true,
+            Message = "Biometrics disabled for device",
+            IsBiometricEnabled = stillTrusted
+        };
+    }
+
+    public async Task<List<TrustedDeviceDto>> GetTrustedDevicesAsync(Guid userId)
+    {
+        var devices = await _deviceRepository.GetUserDevicesAsync(userId);
+        return devices
+            .Where(d => d.IsActive)
+            .Select(MapToTrustedDeviceDto)
+            .ToList();
+    }
+
     public async Task<bool> CheckDeviceTrustAsync(Guid userId, string deviceId)
     {
         var device = await _deviceRepository.GetByDeviceIdAsync(userId, deviceId);
@@ -319,5 +537,35 @@ public class AuthService : IAuthService
 
         return await _deviceRepository.CreateAsync(device);
     }
-}
 
+    private async Task HandleFailedLoginAsync(VerifyOtpRequestDto request)
+    {
+        if (request.Type != OtpType.Login)
+            return;
+
+        var user = await _userRepository.GetByIdentifierAsync(request.Identifier);
+        if (user == null)
+            return;
+
+        user.FailedLoginAttempts++;
+        if (user.FailedLoginAttempts >= MaxLoginFailures)
+        {
+            user.LockedUntil = DateTime.UtcNow.AddMinutes(LockoutMinutes);
+        }
+        await _userRepository.UpdateAsync(user);
+    }
+
+    private TrustedDeviceDto MapToTrustedDeviceDto(Device device)
+    {
+        return new TrustedDeviceDto
+        {
+            DeviceId = device.DeviceId,
+            DeviceName = device.DeviceName,
+            DeviceType = device.DeviceType,
+            IsTrusted = device.IsTrusted,
+            TrustedAt = device.TrustedAt,
+            FirstSeenAt = device.FirstSeenAt,
+            LastSeenAt = device.LastSeenAt
+        };
+    }
+}

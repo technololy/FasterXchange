@@ -10,6 +10,8 @@ public class Device
     public string? IpAddress { get; set; }
     public string? UserAgent { get; set; }
     public bool IsTrusted { get; set; } = false;
+    public string? BiometricKey { get; set; }
+    public DateTime? TrustedAt { get; set; }
     public DateTime FirstSeenAt { get; set; } = DateTime.UtcNow;
     public DateTime LastSeenAt { get; set; } = DateTime.UtcNow;
     public bool IsActive { get; set; } = true;
@@ -17,4 +19,3 @@ public class Device
     // Navigation property
     public virtual User User { get; set; } = null!;
 }
-

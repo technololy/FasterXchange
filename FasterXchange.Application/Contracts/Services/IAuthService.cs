@@ -10,5 +10,9 @@ public interface IAuthService
     Task<VerifyOtpResponseDto> VerifyOtpAsync(VerifyOtpRequestDto request);
     Task<bool> CheckDeviceTrustAsync(Guid userId, string deviceId);
     Task<Device> RegisterDeviceAsync(Guid userId, string deviceId, string? deviceName, string? deviceType, string? ipAddress, string? userAgent);
+    Task<AuthActionResponseDto> SetTransactionPinAsync(Guid userId, SetPinRequestDto request);
+    Task<AuthActionResponseDto> VerifyTransactionPinAsync(Guid userId, VerifyPinRequestDto request);
+    Task<TrustedDeviceDto?> TrustDeviceForBiometricsAsync(Guid userId, BiometricTrustRequestDto request);
+    Task<AuthActionResponseDto> DisableBiometricsForDeviceAsync(Guid userId, string deviceId);
+    Task<List<TrustedDeviceDto>> GetTrustedDevicesAsync(Guid userId);
 }
-

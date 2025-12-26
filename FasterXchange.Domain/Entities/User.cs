@@ -19,6 +19,8 @@ public class User
     public bool IsBalanceVisible { get; set; } = true;
     public UserStatus Status { get; set; } = UserStatus.Unverified;
     public KycStatus KycStatus { get; set; } = KycStatus.NotStarted;
+    public int FailedPinAttempts { get; set; } = 0;
+    public DateTime? PinLockedUntil { get; set; }
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     public DateTime? UpdatedAt { get; set; }
     public DateTime? LastLoginAt { get; set; }
@@ -52,4 +54,3 @@ public enum KycStatus
     Rejected,
     ResubmissionRequired
 }
-
